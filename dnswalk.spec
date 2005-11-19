@@ -1,8 +1,12 @@
+#
+# Conditional build:
+%bcond_without	autodeps	# don't BR packages needed only for resolving deps
+#
 %include	/usr/lib/rpm/macros.perl
 Summary:	The dnswalk DNS database debugger
 Name:		dnswalk
 Version:	2.0.2
-Release:	0.1
+Release:	0.2
 License:	Artistic
 Group:		Applications/Networking
 Source0:	http://www.visi.com/~barr/dnswalk/%{name}-%{version}.tar.gz
@@ -11,6 +15,9 @@ Patch0:		%{name}-perlpath.patch
 Patch1:		%{name}-delete-filterout.patch
 URL:		http://www.visi.com/~barr/dnswalk/
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with autodeps}
+BuildRequires:	perl-Net-DNS
+%endif
 Buildarch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
