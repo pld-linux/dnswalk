@@ -1,16 +1,16 @@
+%include	/usr/lib/rpm/macros.perl
 Summary:	The dnswalk DNS database debugger
 Name:		dnswalk
 Version:	2.0.2
 Release:	0.1
-Group:		Applications/Networking
-URL:		http://www.visi.com/~barr/dnswalk/
 License:	Artistic
+Group:		Applications/Networking
 Source0:	http://www.visi.com/~barr/dnswalk/%{name}-%{version}.tar.gz
 # Source0-md5:	62b9302822353fad71d51aefdae1cad1
 Patch0:		%{name}-perlpath.patch
 Patch1:		%{name}-delete-filterout.patch
-Requires:	perl-Net-DNS
-Requires:	perl >= 5.004
+URL:		http://www.visi.com/~barr/dnswalk/
+BuildRequires:	rpm-perlprov >= 4.1-13
 Buildarch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
