@@ -1,0 +1,18 @@
+diff -Naur dnswalk-2.0.2/dnswalk dnswalk-2.0.2.oden/dnswalk
+--- dnswalk-2.0.2/dnswalk	1997-10-06 09:24:00.000000000 -0400
++++ dnswalk-2.0.2.oden/dnswalk	2002-06-29 06:48:54.000000000 -0400
+@@ -1,4 +1,4 @@
+-#!/usr/contrib/bin/perl
++#!/usr/bin/perl
+ #
+ # dnswalk    Walk through a DNS tree, pulling out zone data and
+ # dumping it in a directory tree
+diff -Naur dnswalk-2.0.2/makereports dnswalk-2.0.2.oden/makereports
+--- dnswalk-2.0.2/makereports	1997-08-11 09:52:37.000000000 -0400
++++ dnswalk-2.0.2.oden/makereports	2002-06-29 06:49:24.000000000 -0400
+@@ -1,4 +1,4 @@
+-#!/usr/contrib/bin/perl
++#!/usr/bin/perl
+ # This takes output from dnswalk and makes a "rep.orts" directory
+ # with one file per contact.  Great for sending mail to all the admins.
+ 

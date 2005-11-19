@@ -1,0 +1,18 @@
+--- dnswalk.orig	2005-06-17 19:35:35.428688162 +0900
++++ dnswalk	2005-06-17 19:36:07.447322829 +0900
+@@ -230,12 +230,12 @@
+ 	    }
+ 	    elsif ($opt_F && !&equal($name,$rr->name)) {
+ 		# Filter out "hostname-something" (like "neptune-le0")
+-		if (index(split (/\./, $rr->name, 2) . "-", 
+-			    split (/\./, $name, 2)) == -1 ) {
++#		if (index(split (/\./, $rr->name, 2) . "-", 
++#			    split (/\./, $name, 2)) == -1 ) {
+ 			&printerr("WARN", $rr->name ." A ". 
+ 			    $rr->address .": points to $name\n") 
+ 			    if ((split(/\./,$name))[0] ne "localhost");
+-		}
++#		}
+ 	    }
+ 	    if ($main'opt_a) {
+ 		# keep list in %glues, report any duplicates
