@@ -4,6 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	The dnswalk DNS database debugger
+Summary(pl):	Narzêdzie do diagnostyki baz danych DNS
 Name:		dnswalk
 Version:	2.0.2
 Release:	0.2
@@ -26,8 +27,13 @@ dnswalk is a DNS debugger. It performs zone transfers of specified
 domains, and checks the database in numerous ways for internal
 consistency, as well as accuracy.
 
+%description -l pl
+dnswalk to narzêdzie do diagnostyki DNS-ów. Wykonuje transfery stref
+dla podanych domen i sprawdza bazê danych w ró¿ny sposób pod k±tem
+wewnêtrznej spójno¶ci oraz dok³adno¶ci.
+
 %prep
-%setup -q -c -a0
+%setup -q -c
 %patch0 -p1
 %patch1 -p0
 
