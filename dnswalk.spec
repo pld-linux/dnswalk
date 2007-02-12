@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	The dnswalk DNS database debugger
-Summary(pl.UTF-8):   Narzędzie do diagnostyki baz danych DNS
+Summary(pl.UTF-8):	Narzędzie do diagnostyki baz danych DNS
 Name:		dnswalk
 Version:	2.0.2
 Release:	0.2
