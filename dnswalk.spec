@@ -19,7 +19,7 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with autodeps}
 BuildRequires:	perl-Net-DNS
 %endif
-Buildarch:	noarch
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
