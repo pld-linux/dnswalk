@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	autodeps	# don't BR packages needed only for resolving deps
 #
-%include	/usr/lib/rpm/macros.perl
 Summary:	The dnswalk DNS database debugger
 Summary(pl.UTF-8):	Narzędzie do diagnostyki baz danych DNS
 Name:		dnswalk
